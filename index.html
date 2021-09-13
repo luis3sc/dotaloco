@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="estilos.css">
+    <!-- Demo styles -->
+  </head>
+  <body>
+    <nav>
+      <h2><a href="#">Logo</a></h2>
+      <ul>
+        <li><a href="#portada"><i class="fa fa-home show"></i>DotaLoco</a></li>
+        <li><a href="#clasificatorias"><i class="fa fa-info show"></i>Clasificatorias</a></li>
+        <li><a href="#apoyanos"><i class="fa fa-briefcase show"></i>Apoyanos</a></li>
+        <li><a href="#contacto"><i class="fa fa-paper-plane show"></i>Contacto</a></li>
+      </ul>
+    </nav>
+    <section class="portada" id="portada">
+      <h1>TORNEO DOTA 2</h1>
+      
+      
+<svg version="1.1" class="logodotaloco" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 351.9 59.1" style="enable-background:new 0 0 351.9 59.1;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FF0000;}
+</style>
+<g>
+	<rect width="351.9" height="59.1"/>
+</g>
+<g>
+	<path class="st0" d="M29.2,46.3H10.4v-35h18.9c11.4,0,18.2,6.5,18.2,17.5C47.5,39.8,40.7,46.3,29.2,46.3z M12.7,44h16.6
+		c10.3,0,15.9-5.4,15.9-15.2c0-9.8-5.7-15.2-15.9-15.2H12.7V44z M27.5,35.1h-4.7V22.6h4.7c4.4,0,7,2.3,7,6.3
+		C34.5,32.8,32,35.1,27.5,35.1z M25.1,32.8h2.4c3.2,0,4.7-1.3,4.7-4c0-2.7-1.5-4-4.7-4h-2.4V32.8z"/>
+</g>
+<g>
+	<path class="st0" d="M71.7,47.1c-5.5,0-10.5-1.8-14.1-5.2c-3.5-3.3-5.5-8-5.5-13.2c0-5.2,1.9-9.9,5.5-13.2
+		c3.5-3.3,8.5-5.2,14.1-5.2c5.5,0,10.5,1.8,14.1,5.2c3.5,3.3,5.5,8,5.5,13.2c0,5.2-1.9,9.9-5.5,13.2C82.2,45.2,77.2,47.1,71.7,47.1z
+		 M71.7,12.6c-10.2,0-17.2,6.6-17.2,16.1c0,9.5,7.1,16.1,17.2,16.1s17.2-6.6,17.2-16.1C88.9,19.2,81.9,12.6,71.7,12.6z"/>
+</g>
+<g>
+	<path class="st0" d="M120.8,46.2h-14.7V24.6H96V11.2h35v13.4h-10.1V46.2z M108.4,43.9h10.1V22.3h10.1v-8.8H98.2v8.8h10.1V43.9z"/>
+</g>
+<g>
+	<path class="st0" d="M175.5,46.2h-15.8l-1.2-5.2h-7.1l-1.2,5.2h-15.8l10.5-35H165L175.5,46.2z M161.5,43.9h10.9l-9.1-30.4h-16.7
+		l-9.1,30.4h10.9l1.2-5.2h10.7L161.5,43.9z"/>
+</g>
+<g>
+	<path class="st0" d="M212.8,46.2h-31.5v-35H196v21.6h16.8V46.2z M183.5,43.9h26.9v-8.8h-16.8V13.5h-10.1V43.9z"/>
+</g>
+<g>
+	<path class="st0" d="M237.9,47.1c-5.5,0-10.5-1.8-14.1-5.2c-3.5-3.3-5.5-8-5.5-13.2c0-5.2,1.9-9.9,5.5-13.2
+		c3.5-3.3,8.5-5.2,14.1-5.2c5.5,0,10.5,1.8,14.1,5.2c3.5,3.3,5.5,8,5.5,13.2c0,5.2-1.9,9.9-5.5,13.2
+		C248.5,45.2,243.5,47.1,237.9,47.1z M237.9,12.6c-10.2,0-17.2,6.6-17.2,16.1c0,9.5,7.1,16.1,17.2,16.1s17.2-6.6,17.2-16.1
+		C255.2,19.2,248.1,12.6,237.9,12.6z"/>
+</g>
+<g>
+	<path class="st0" d="M281.2,47.1c-5.5,0-10.5-1.8-14.1-5.2c-3.5-3.3-5.5-8-5.5-13.2c0-5.2,1.9-9.9,5.5-13.2
+		c3.5-3.3,8.5-5.2,14.1-5.2c7.5,0,13.8,3.6,16.8,9.7l0.5,1l-13.2,6.5l-0.5-1.1c-0.7-1.5-1.7-2.1-3.3-2.1c-2.4,0-4,1.7-4,4.3
+		c0,2.6,1.6,4.3,4,4.3c1.6,0,2.6-0.6,3.2-1.9l0.5-1.1l12.7,7.5l-0.6,1C294.2,43.9,288.3,47.1,281.2,47.1z M281.2,12.6
+		c-10.2,0-17.2,6.6-17.2,16.1c0,9.5,7.1,16.1,17.2,16.1c5.8,0,10.7-2.4,13.6-6.5l-8.6-5.1c-1.1,1.4-2.6,2.1-4.6,2.1
+		c-3.7,0-6.3-2.8-6.3-6.6c0-3.8,2.7-6.6,6.3-6.6c2.1,0,3.8,0.8,4.8,2.4l9-4.4C292.6,15.4,287.4,12.6,281.2,12.6z"/>
+</g>
+<g>
+	<path class="st0" d="M323.9,47.1c-5.5,0-10.5-1.8-14.1-5.2c-3.5-3.3-5.5-8-5.5-13.2c0-5.2,1.9-9.9,5.5-13.2
+		c3.5-3.3,8.5-5.2,14.1-5.2c5.5,0,10.5,1.8,14.1,5.2c3.5,3.3,5.5,8,5.5,13.2c0,5.2-1.9,9.9-5.5,13.2
+		C334.4,45.2,329.4,47.1,323.9,47.1z M323.9,12.6c-10.2,0-17.2,6.6-17.2,16.1c0,9.5,7.1,16.1,17.2,16.1s17.2-6.6,17.2-16.1
+		C341.1,19.2,334,12.6,323.9,12.6z"/>
+</g>
+</svg>
+<p>PREMIO</p>
+      <h3>s/ 1.000</h3>
+      <p>SIN LÍMITES DE MEDALLA</p>
+      
+</section>
+<!--termino-->
+<section class="pres" id="presentacion">
+  <div class="seccion">
+    <h3>REPARTICIÓN DEL PREMIO</h3>
+
+    <table class="tabla">
+      <tr>
+        <th>Total</th>
+        <th>s/ 1.000</th>
+      </tr>
+      <tr>
+        <td>Primer Puesto</td>
+        <td>s/ 700</td>
+      </tr>
+      <tr>
+        <td>Segundo Puesto</td>
+        <td>s/ 200</td>
+      </tr>
+      <tr>
+        <td>Tercer Puesto</td>
+        <td>s/ 100</td>
+      </tr>
+    </table>
+  </div>
+  <div class="seccion">
+    <h3>CRONOGRAMA</h3>
+
+    <table class="tabla">
+      <tr>
+        <th></th>
+        <th>Fecha</th>
+      </tr>
+      <tr>
+        <td>Clasificatorias</td>
+        <td>22 sept - 17 oct</td>
+      </tr>
+      <tr>
+        <td>Evento principal</td>
+        <td>23 octubre</td>
+      </tr>
+      <tr>
+        <td>Fase Final</td>
+        <td>24 octubre</td>
+      </tr>
+    </table>
+  </div>
+</section>
+<!--termino-->
+    <section class="clasi" id="clasificatorias">
+    <input class="radio" id="one" name="group" type="radio" checked>
+    <input class="radio" id="two" name="group" type="radio">
+    <input class="radio" id="three" name="group" type="radio">
+    <div class="tabs">
+    <label class="tab" id="one-tab" for="one">Clasificatorias<br> Gratuitas</label>
+    <label class="tab" id="two-tab" for="two">Clasificatorias<br> Directas</label>
+    <label class="tab" id="three-tab" for="three">Evento<br> Principal</label>
+      </div>
+    <div class="panels">
+    <div class="panel" id="one-panel">
+     <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide grey">
+  <div class="tarjetaevento">
+    <div class="sup">
+      <p>22 sept</p>
+      <p>2:00 PM</p>
+    </div>
+    <div class="inf">
+      <p>cupos limitados</p>
+      <button class="boton">REGISTRATE AHORA</button>
+    </div>
+  </div>
+        </div>
+
+<div class="swiper-slide">
+          <div class="tarjetaevento">
+            <div class="sup">
+              <p>22 sept</p>
+              <p>2:00 PM</p>
+            </div>
+            <div class="inf">
+              <p>cupos limitados</p>
+              <button class="boton">REGISTRATE AHORA</button>
+            </div>
+          </div>
+</div>
+ <div class="swiper-slide">
+  <div class="tarjetaevento">
+    <div class="sup">
+      <p>22 sept</p>
+      <p>2:00 PM</p>
+    </div>
+    <div class="inf">
+      <p>cupos limitados</p>
+      <button class="boton">REGISTRATE AHORA</button>
+    </div>
+  </div>
+</div>
+ <div class="swiper-slide">
+  <div class="tarjetaevento">
+    <div class="sup">
+      <p>22 sept</p>
+      <p>2:00 PM</p>
+    </div>
+    <div class="inf">
+      <p>cupos limitados</p>
+      <button class="boton">REGISTRATE AHORA</button>
+    </div>
+  </div>
+ </div>
+      </div>
+    </div>
+    </div>
+    <!--panel2-->
+    <div class="panel" id="two-panel">
+     
+        <!--contenido-->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide grey">
+  <div class="tarjetaevento">
+    <div class="sup">
+      <p>22 sept</p>
+      <p>2:00 PM</p>
+    </div>
+    <div class="inf">
+      <p>cupos limitados</p>
+      <button class="boton">REGISTRATE AHORA</button>
+    </div>
+  </div>
+        </div>
+
+<div class="swiper-slide">
+          <div class="tarjetaevento">
+            <div class="sup">
+              <p>22 sept</p>
+              <p>2:00 PM</p>
+            </div>
+            <div class="inf">
+              <p>cupos limitados</p>
+              <button class="boton">REGISTRATE AHORA</button>
+            </div>
+          </div>
+</div>
+ <div class="swiper-slide">
+  <div class="tarjetaevento">
+    <div class="sup">
+      <p>22 sept</p>
+      <p>2:00 PM</p>
+    </div>
+    <div class="inf">
+      <p>cupos limitados</p>
+      <button class="boton">REGISTRATE AHORA</button>
+    </div>
+  </div>
+</div>
+ <div class="swiper-slide">
+  <div class="tarjetaevento">
+    <div class="sup">
+      <p>22 sept</p>
+      <p>2:00 PM</p>
+    </div>
+    <div class="inf">
+      <p>cupos limitados</p>
+      <button class="boton">REGISTRATE AHORA</button>
+    </div>
+  </div>
+ </div>
+      </div>
+    </div>
+<!--contenido-->
+    </div>
+     <!--panel2-->
+    <div class="panel" id="three-panel">
+       <!--contenido-->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+  <div class="tarjetaevento">
+    <div class="sup">
+      <p>22 sept</p>
+      <p>2:00 PM</p>
+    </div>
+    <div class="inf">
+      <p>cupos limitados</p>
+      <button class="boton">REGISTRATE AHORA</button>
+    </div>
+  </div>
+        </div>
+
+<div class="swiper-slide">
+          <div class="tarjetaevento">
+            <div class="sup">
+              <p>22 sept</p>
+              <p>2:00 PM</p>
+            </div>
+            <div class="inf">
+              <p>cupos limitados</p>
+              <button class="boton">REGISTRATE AHORA</button>
+            </div>
+          </div>
+</div>
+      </div>
+    </div>
+<!--contenido-->
+    </div>
+    </div>
+  </section>
+<!--termino-->
+<section class="pres" id="apoyanos">
+  <a class="seccion centro fondo-1" href="#" >
+    <h3 class="borde">CONVIERTETE <br> EN PATROCINADOR</h3>
+  </a>
+  <a class="seccion centro fondo-2" href="#">
+    <h3 class="borde">BUSCAR <br> EQUIPO</h3>
+  </a>
+</section>
+
+<section class="patrocinadores">
+  <div class="titulo">
+    <h3>PATROCINADORES</h3>
+  </div>
+  <div class="partner">
+    <img src="torneo_lancenter.webp" alt="">
+    <img src="underdogs_league_dota2.webp" alt="">
+    <img src="all_in_gaming.webp" alt="">
+    <img src="copa_mas_gamers_2019.webp" alt="">
+  </div>
+
+</section>
+<footer class="footer" id="contacto">
+  <div class="foot">
+    <svg version="1.1" class="logosvg" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 174.9 26.2" style="enable-background:new 0 0 174.9 26.2;" xml:space="preserve">
+<style type="text/css">
+	.st10{fill:#FFFFFF;}
+</style>
+<g>
+	<polygon class="st10" points="124.8,6.5 131.8,6.5 131.8,26 138.1,26 138.1,6.5 145.1,6.5 145.1,0.2 124.8,0.2 	"/>
+	<polygon class="st10" points="100,6.5 107,6.5 107,26 113.3,26 113.3,6.5 120.3,6.5 120.3,0.2 100,0.2 	"/>
+	<path class="st10" d="M161.9,0c-7.2,0-13,5.8-13,13c0,7.2,5.8,13,13,13c7.2,0,13-5.8,13-13C174.9,5.8,169.1,0,161.9,0z M161.9,20.3
+		c-4,0-7.3-3.3-7.3-7.3c0-4,3.3-7.3,7.3-7.3s7.3,3.3,7.3,7.3C169.3,17,166,20.3,161.9,20.3z"/>
+	<path class="st10" d="M31,13c0,7.2,5.8,13,13,13h7.8v-5.7H44c-4,0-7.3-3.3-7.3-7.3c0-4,3.3-7.3,7.3-7.3h7.8V0H44
+		C36.8,0,31,5.8,31,13z"/>
+	<path class="st10" d="M13.9,0c-7.2,0-13,5.8-13,13c0,7.2,5.8,13,13,13c7.2,0,13-5.8,13-13C26.9,5.8,21.1,0,13.9,0z M13.9,20.3
+		c-4,0-7.3-3.3-7.3-7.3c0-4,3.3-7.3,7.3-7.3S21.3,9,21.3,13C21.3,17,18,20.3,13.9,20.3z"/>
+	<polygon class="st10" points="86.8,0.2 80.6,0.2 80.6,26.2 95.7,26.2 95.7,19.9 86.8,19.9 	"/>
+	<path class="st10" d="M70.2,1.4L70.2,1.4l0,14.8c0,2.2-1.8,3.9-3.9,3.9c-1.8,0-3.2-1.2-3.7-2.7c0,0,0-0.1,0-0.1v-2.2
+		c0,0,0-0.1,0-0.1V1.4h0V0h-6.2v15.9c0,4.2,2.6,7.8,6.3,9.3c1.2,0.5,2.5,0.8,3.8,0.8c1.4,0,2.7-0.3,3.8-0.8c3.7-1.5,6.3-5.1,6.3-9.3
+		V0h-6.2V1.4z"/>
+</g>
+</svg>
+  <br> <br>
+    <p> Somos una agencia digital
+            que impulsamos
+            la escena competitiva de
+            latinoamérica de e-sports.</p>
+  </div>
+  <div class="foot">
+    <h4>CONTACTO</h4><br>
+    <p>+51 972417095</p>
+    <p>Admin@ocultto.com</p>
+  </div>
+  <div class="foot">
+    <h4>SIGUÉNOS EN</h4>
+
+   
+    <svg version="1.1" id="Layer_1" class="svgsocial" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+       viewBox="0 0 504 504" style="enable-background:new 0 0 504 504;" xml:space="preserve">
+    <style type="text/css">
+      .st0{fill:#FF0000;}
+      .st1{fill:#ffffff;}
+    </style>
+    <path class="st0 social" d="M0,0v504h504V0H0z M319.6,252H272v156h-60V252h-32v-64h28v-27.2c0-25.6,12.8-66,66.8-66H324V148h-34.8
+      c-5.6,0-13.2,3.6-13.2,16v24h49.2L319.6,252z"/>
+    <path class="st1 social" d="M325.2,188l-5.6,64H272v156h-60V252h-32v-64h28v-27.2c0-25.6,12.8-66,66.8-66H324V148h-34.8
+      c-5.6,0-13.2,3.6-13.2,16v24H325.2z"/>
+    </svg>
+
+    <svg version="1.1" id="Layer_1" class="svgsocial" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 504 504" style="enable-background:new 0 0 504 504;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FF0000;}
+	.st1{fill:#FFFFFF;}
+</style>
+<rect class="st0" width="504" height="504"/>
+<g>
+	<g>
+		<path class="st1" d="M420.4,149.9c-10-17.8-20.8-21-42.9-22.3c-22-1.5-77.5-2.1-125.5-2.1c-48.1,0-103.5,0.6-125.6,2.1
+			c-22,1.3-32.9,4.5-43,22.3C73.3,167.6,68,198.1,68,251.9c0,0,0,0.1,0,0.1c0,0,0,0.1,0,0.1v0c0,53.6,5.3,84.3,15.6,101.9
+			c10.1,17.8,20.9,21,42.9,22.5c22,1.3,77.5,2,125.6,2c48,0,103.4-0.8,125.5-2c22.1-1.5,32.9-4.7,42.9-22.5
+			c10.4-17.6,15.6-48.3,15.6-101.9c0,0,0-0.1,0-0.1c0,0,0,0,0-0.1C436,198.1,430.8,167.6,420.4,149.9z M206,321V183l115,69L206,321z
+			"/>
+	</g>
+</g>
+</svg>
+
+<svg version="1.1" id="Layer_1" class="svgsocial" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 504 504" style="enable-background:new 0 0 504 504;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FF0000;}
+	.st1{fill:#FFFFFF;}
+</style>
+<rect class="st0" width="504" height="504"/>
+<g>
+	<g>
+		<g>
+			<path class="st1" d="M320.5,69.4h-137c-63,0-114.1,51.1-114.1,114.1v137c0,63,51.1,114.1,114.1,114.1h137
+				c63,0,114.1-51.1,114.1-114.1v-137C434.6,120.5,383.5,69.4,320.5,69.4z M400.4,320.5c0,44.1-35.8,79.9-79.9,79.9h-137
+				c-44.1,0-79.9-35.8-79.9-79.9v-137c0-44.1,35.8-79.9,79.9-79.9h137c44.1,0,79.9,35.8,79.9,79.9V320.5z"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<path class="st1" d="M252,160.7c-50.4,0-91.3,40.9-91.3,91.3s40.9,91.3,91.3,91.3s91.3-40.9,91.3-91.3S302.4,160.7,252,160.7z
+				 M252,309.1c-31.5,0-57.1-25.6-57.1-57.1c0-31.5,25.6-57.1,57.1-57.1s57.1,25.6,57.1,57.1C309.1,283.5,283.5,309.1,252,309.1z"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<circle class="st1" cx="350.1" cy="153.9" r="12.2"/>
+		</g>
+	</g>
+</g>
+</svg>
+
+<svg version="1.1" id="Layer_1" class="svgsocial" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 504 504" style="enable-background:new 0 0 504 504;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FF0000;}
+	.st1{fill:#FFFFFF;}
+</style>
+<rect class="st0" width="504" height="504"/>
+<g>
+	<path class="st1" d="M434.6,252c0,100.8-81.7,182.6-182.6,182.6S69.4,352.9,69.4,252S151.2,69.4,252,69.4S434.6,151.1,434.6,252z"
+		/>
+	<path class="st0" d="M351.9,261.1c-36.4-21.8-82.6-33.7-130.4-33.7c-30.5,0-51.5,4.4-72,10c-7.6,2.1-11.4,7.5-11.4,15.2
+		c0,7.9,6.4,14.3,14.3,14.3c3.3,0,5.3-1.1,8.9-2c16.5-4.4,36.5-7.6,59.6-7.6c45.1,0,86.3,11.7,116,29.3c2.7,1.6,5.2,3.2,9.1,3.2
+		c7.9,0,14.2-6.4,14.2-14.3C360.2,269,358,264.6,351.9,261.1z"/>
+	<path class="st0" d="M330.2,314.6c-30.6-18.4-66.3-27.5-106.2-27.5c-23.3,0-45.8,2.9-68.3,8.1c-5.5,1.1-9.9,4.9-9.9,12.5
+		c0,6,4.6,11.5,11.6,11.5c2.2,0,6-1.2,9-1.8c18.4-3.8,38.1-6.3,57.6-6.3c35,0,68,8.4,94.5,24.4c2.8,1.7,4.8,2.7,7.7,2.7
+		c6,0,11.4-4.8,11.4-11.4C337.4,320,334.8,317.3,330.2,314.6z"/>
+	<path class="st0" d="M376.5,199.9c-41.2-24.2-97.6-35.2-151.2-35.2c-31.6,0-60.6,3.6-86.7,11.2c-6.6,2-12.8,7.5-12.8,17.5
+		c0,9.7,7.5,17.4,17.2,17.4c3.4,0,6.7-1.3,9.4-2c23-6.3,48.2-8.8,72.9-8.8c49.6,0,100.9,10.9,133.9,30.7c3.5,1.9,5.7,2.8,9.4,2.8
+		c9.2,0,17.2-7.1,17.2-17.1C385.9,207.8,382,203.1,376.5,199.9z"/>
+</g>
+</svg>    
+
+<svg version="1.1" id="Layer_1" class="svgsocial" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 504 504" style="enable-background:new 0 0 504 504;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FF0000;}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+</style>
+<rect class="st0" width="504" height="504"/>
+<path id="path17" class="st1" d="M388.6,257.6l-53.3-2.3c-15.9,0-34.6,5-49.1,18.6c-18.2,17.1-20.3,45.2-12.7,63.2
+	c7.6,18,29.2,29.1,50.5,24.7c16.9-3.5,26.4-18.9,24.6-33.1c-1.5-12.1-8.5-17.9-16.8-17.9c-8.3,0-11.9,4.5-12.5,9.1
+	c-0.7,4.5,0.8,7.1,4,10c4.9,4.6-4,17.2-16.6,9.8c-6.9-4-11.6-13.8-10.3-25.9c1.8-16.5,15.1-31.4,39-31.6c24.4-0.2,41.8,15,47.5,37.7
+	c7.2,28.4-7.7,62.2-41.7,80.6c-42.2,22.8-113.7,20.4-152.3-20.6c-22.7-24.1-30.3-55.1-28.3-83.3c0.7-9.5,2-19.1,4-28.8
+	c0.7-3.3-1.5-6.5-4.9-7.2c-0.4-0.1-0.8-0.1-1.2-0.1H92.2c-4.6,0-8.3-3.6-8.3-8.1c0-0.6,0.1-1.2,0.2-1.8l20.8-90.6
+	c1.3-5.6,6.3-9.5,12.2-9.5h64.6c3.8,0,7-2.5,8-6l11.1-46c1.5-5.3,6.4-9,12-9h100.8c4.6,0,8.3,3.6,8.3,8.1c0,0.6-0.1,1.2-0.2,1.8
+	l-10.9,46.1c-0.5,2.2,0.9,4.4,3.1,4.9c0.3,0.1,0.6,0.1,0.9,0.1h97.4c4.6,0,7.8,3.6,7.8,8.1c0,0.7-0.1,1.3-0.2,2L397,251.5
+	C396.1,255.2,392.6,257.8,388.6,257.6L388.6,257.6z"/>
+</svg>
+
+<svg version="1.1" id="Layer_1" class="svgsocial" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 504 504" style="enable-background:new 0 0 504 504;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FF0000;}
+	.st1{fill:#FFFFFF;}
+</style>
+<rect class="st0" width="504" height="504"/>
+<g>
+	<path class="st1" d="M424.5,328c-1.4-1.7-26.8,39-92,40.4c0,0-11-12.5-18.9-23.4c37.6-10.8,52-32.2,52.4-32.8
+		c-74.2,46.7-139.3,39.4-217.1,7.8c-0.7,0-1.1-0.3-1.4-0.7v-0.1c-0.4-0.4-0.7-0.7-1.4-0.7h-1.4c-4.6-3-7.7-4.6-7.9-4.7
+		c0.4,0.7,14.8,22.1,50.9,32.8c-9.6,11-19.1,23.4-19.1,23.4c-65.2-1.5-89-42.3-89-42.3c0-90.7,42.9-164.2,42.9-164.2
+		c42.9-31.2,82.6-29.7,82.6-29.7l3.2,3.2c-52.5,12.5-76.3,36-76.3,36c2.4-0.5,108.4-61.6,236.8,1.5c-0.7-0.7-24.6-22.1-73.1-35.9
+		l4.4-4.3c6.8,0,42.8,1.3,81.4,29.5C381.4,163.8,424.5,237.5,424.5,328z"/>
+	<path class="st0" d="M305.1,299.8c16.6,0,30.2-14,30.2-31.4c0-17.2-13.5-31.2-30.2-31.2v0.1c-16.6,0-30.1,14-30.2,31.3
+		C274.9,285.7,288.5,299.8,305.1,299.8z"/>
+	<path class="st0" d="M197.1,299.8c16.6,0,30.2-14,30.2-31.4c0-17.2-13.5-31.2-30.1-31.2l-0.1,0.1c-16.6,0-30.2,14-30.2,31.3
+		C166.9,285.7,180.4,299.8,197.1,299.8z"/>
+</g>
+</svg>
+
+
+  </div>
+</footer>
+<!--termino-->
+    
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+  <script src="script.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  </body>
+</html>
+
